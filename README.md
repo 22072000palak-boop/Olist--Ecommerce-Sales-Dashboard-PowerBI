@@ -16,3 +16,5 @@ An interactive executive dashboard built in **Microsoft Power BI** analyzing **9
 * **Data Modeling:** Connected 6 relational tables (`Orders`, `Order_Items`, `Payments`, `Customers`, `Products`, `Category_Translation`) using a star-schema structure with bi-directional cross-filtering between `Orders` and `Payments` to accurately attribute multi-payment orders.
 * **DAX Measures:** Created dynamic measures for `Total Revenue`, `Total Orders`, and `Average Order Value` formatted in Brazilian Real (`R$`).
 * **Interactive Visuals:** Full cross-filtering enabled across all KPIs, time-series trends, category rankings, payment distributions, and state breakdowns.
+## Download Interactive Power BI File
+* **[Download Olist_Ecommerce_Dashboard.pbix (34.2 MB)](../../releases/tag/v1.0)**
