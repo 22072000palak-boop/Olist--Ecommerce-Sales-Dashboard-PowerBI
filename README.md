@@ -3,7 +3,7 @@
 ## Project Overview
 An interactive executive dashboard built in **Microsoft Power BI** analyzing **99K+ orders** and **R$13.59M** in total revenue from the Brazilian Olist E-Commerce dataset. Designed to track revenue growth, top-performing product categories, customer payment preferences, and geographic demand across Brazil.
 
-![Dashboard Preview](dashboard_preview.png)
+![Dashboard Preview](Dashboard_preview.png)
 
 ## Key Business Insights
 * **Total Revenue & Order Volume:** Generated **R$13.59M** across **99K** orders with an **Average Order Value (AOV)** of **R$136.68**.
@@ -16,5 +16,13 @@ An interactive executive dashboard built in **Microsoft Power BI** analyzing **9
 * **Data Modeling:** Connected 6 relational tables (`Orders`, `Order_Items`, `Payments`, `Customers`, `Products`, `Category_Translation`) using a star-schema structure with bi-directional cross-filtering between `Orders` and `Payments` to accurately attribute multi-payment orders.
 * **DAX Measures:** Created dynamic measures for `Total Revenue`, `Total Orders`, and `Average Order Value` formatted in Brazilian Real (`R$`).
 * **Interactive Visuals:** Full cross-filtering enabled across all KPIs, time-series trends, category rankings, payment distributions, and state breakdowns.
+* ## Dataset Source & Data Cleaning
+* **Original Dataset:** [Brazilian E-Commerce Public Dataset by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+* **Data Cleaning & Transformation (Power Query):**
+  * Merged Portuguese product category names with English translations (`Category_Translation`) for clear business reporting.
+  * Standardized date/time columns, currency data types (`R$`), and handled null/unapproved order records.
+  * Built a relational star-schema data model connecting 6 tables (`Orders`, `Order_Items`, `Payments`, `Customers`, `Products`, `Category_Translation`) with bi-directional cross-filtering between `Orders` and `Payments`.
+
+![Data Model](data_model.png)
 ## Download Interactive Power BI File
 * **[Download Olist_Ecommerce_Dashboard.pbix (34.2 MB)](../../releases/tag/v1.0)**
